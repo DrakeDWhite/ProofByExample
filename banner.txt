@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proof By Example</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async>
+	</script>
+</head>
+<body>
+	<header id= "main-header">
+		<div class ="container">
+			<h1> Proof By Example </h1>
+			<ul>
+				<li> <a class="link-style" href="home.html">Home</a></li>
+				<li> <a class="link-style" href="modules.html">Modules</a></li>
+				<li> <a class="link-style" href="about.html">About</a></li>
+				<li> <a class="link-style" href="notes.html">Notes</a></li>
+				<li> <a class="link-style" href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="container">
+
+		/* Add your content here */
+
+		<div class="clr"></div>
+		<div style="margin-top:300px;"></div>
+		<footer id="main-footer">
+			<p> Copyright &copy; 2018 Proof By Example </p>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>w9lab1</title>
+</head>
+
+<body>
+<h1> ROCK PAPER SCISSORS DAWG </h1>
+<h2> JavaScript Questions </h2>
+<ul> <li> <strong> What benefit comes from breaking down the construction of bigger projects into smaller pieces? </strong> <i> The breaking down of large projects into smaller pieces allows us to troubleshoot each individual piece and check every individual piece before moving on,so that when we face an issue we don't have to look through a massive amount of code. </i> </li>
+<li> <strong> Why did we constantly check and test our code? What could go wrong if we did not test our code thoroughly? </strong> <i> If we didn't check our code thoroughly and constantly check the smaller parts, we wouldn't know where the problem was if we only checked it when everything was done. </i> </li>
+<li> <strong> What would we need to add in order to make this game usable for 2 players instead of 1 player and 1 computer? Include pseudocode as part of your answer to assist in thinking about changing the project from PvC (player vs computer) to PvP (player vs player). </strong> <i> In order to allow two players to play, we assign each answer a number still, but instead of writing a function for the computer to choose a random number, we allow a place for input. We dispaly 3 more images of rock paper and scissors as another input, then when both inputs has been answered the computer displays the two. Therefore, when User 1 selects an object, and then User 2 selects another corresponding object, the code displays whether they win, lose, or tie. </i> </li> </ul>  
+
+
+<input type="image" src="images/rock.jpg" onclick="rock_choice()" />
+
+<input type="image" src="images/paper.jpg" onclick="paper_choice()" />
+
+<input type="image" src="images/scissors.jpg" onclick="scissors_choice()" />
+
+<p id="test"> </p>
+
+<script>
+function rock_choice(){
+	var number = Math.floor(Math.random()*3+1);
+	if (number == 1){
+		document.getElementById("test").innerHTML = "<h1> YOU: </h1> <img src='images/rock.jpg'/><h1>COMPUTER: </h1> <img src='images/rock.jpg'/> <h1> TIE </h1>";
+	} else if (number == 2){
+		document.getElementById("test").innerHTML = "<h1> YOU: </h1> <img src='images/rock.jpg'/><h1>COMPUTER: </h1> <img src='images/paper.jpg'/> <h1> LOSE </h1>";
+	} else {
+		document.getElementById("test").innerHTML = "<h1> YOU: </h1> <img src='images/rock.jpg'/><h1>COMPUTER: </h1> <img src='images/scissors.jpg'/> <h1> WIN </h1>";	
+	}
+}
+
+function paper_choice(){
+	var number = Math.floor(Math.random()*3+1);
+	if (number == 1){
+		document.getElementById("test").innerHTML = "<h1> YOU: </h1> <img src='images/paper.jpg'/><h1>COMPUTER: </h1> <img src='images/paper.jpg'/> <h1> TIE </h1>";
+	} else if (number == 2){
+		document.getElementById("test").innerHTML = "<h1> YOU: </h1> <img src='images/paper.jpg'/><h1>COMPUTER: </h1> <img src='images/rock.jpg'/> <h1> WIN </h1>";
+	} else {
+		document.getElementById("test").innerHTML = "<h1> YOU: </h1> <img src='images/paper.jpg'/><h1>COMPUTER: </h1> <img src='images/scissors.jpg'/> <h1> LOSE </h1>";	
+	}
+}
+
+function scissors_choice(){
+	var number = Math.floor(Math.random()*3+1);
+	if (number == 1){
+		document.getElementById("test").innerHTML = "<h1> YOU: </h1> <img src='images/scissors.jpg'/><h1>COMPUTER: </h1> <img src='images/scissors.jpg'/> <h1> TIE </h1>";
+	} else if (number == 2){
+		document.getElementById("test").innerHTML = "<h1> YOU: </h1> <img src='images/scissors.jpg'/><h1>COMPUTER: </h1> <img src='images/paper.jpg'/> <h1> WIN </h1>";
+	} else {
+		document.getElementById("test").innerHTML = "<h1> YOU: </h1> <img src='images/scissors.jpg'/><h1>COMPUTER: </h1> <img src='images/rock.jpg'/> <h1> LOSE </h1>";
+	}
+}
+
+
+</script>
+</body>
+</html>

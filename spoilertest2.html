@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<body>
+
+<div id="spoiler" style="display:none">HIDDEN CONTENT HERE</div> 
+<a onclick="showSpoiler(this,'spoiler')">Show hidden content</a>
+
+<script>
+function showSpoiler(buttonNode, spoilerId) {
+    document.getElementById(spoilerId).style.display='block';
+    buttonNode.style.display='none';
+}
+</script>
+
+</body>
+</html>

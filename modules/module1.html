@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proof By Example</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async>
+	</script>
+</head>
+<body>
+	<header id= "main-header">
+		<div class ="container">
+			<h1> Proof By Example </h1>
+			<ul>
+				<li> <a class="link-style" href="../home.html">Home</a></li>
+				<li> <a class="link-style" href="../modules.html">Modules</a></li>
+				<li> <a class="link-style" href="../about.html">About</a></li>
+				<li> <a class="link-style" href="../contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="container">
+		<div class="module">
+
+		<h2> The Gradient in \(\mathbb{R}^3\) </h2>
+
+		<p> Define some function, \(f\), which goes from an open set in \(\mathbb{R}^3\) to \(\mathbb{R}\), and assume it is differentiable. The gradient of \(f\) at \((x,y,z)\) is the vector in space given by 
+$$ \triangledown f = \bigg(\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, \frac{\partial f}{\partial z} \bigg).$$ 
+Why is this significant? The gradient measures the direction where the object has the fastest speed, or the fastest rate of change. Hence, based on our prior study of tangent spaces of planes, we can use the gradient to find these tangent planes. Let's start with a quick example problem.
+ </p>
+
+<p><b>Example:</b> Let \(f(x,y,z) = \sqrt{x^2+y^2+z^2} = r \), the distance from 0 to \((x,y,z)\). Find the gradient of \(f\).</p>
+
+<p class = 'spoiler'>
+<b> Solution: </b>
+Notice that 
+$$ \frac{\partial f}{\partial x} = \frac{x}{\sqrt{x^2+y^2+z^2}} $$
+and by symmetry this is the same idea for y and z. Hence, our final solution is 
+$$ \triangledown f(x,y,z) = \bigg(\frac{x}{\sqrt{x^2+y^2+z^2}}, \frac{y}{\sqrt{x^2+y^2+z^2}}, \frac{z}{\sqrt{x^2+y^2+z^2}}\bigg) = \frac{1}{r} (x,y,z). $$</p>
+
+<p><b>Example:</b> Let \(f(x,y,z) = y^2+2z + 1\). Find the gradient of \(f\). </p>
+
+<p class = 'spoiler'>
+<b>Solution:</b> We have that 
+$$ \frac{\partial f}{\partial x} = 0, \text{ } \frac{\partial f}{\partial y} = 2y, \text{ } \frac{\partial f}{\partial z} = 2 $$
+using the power rule for polynomials. Hence, we get that the gradient is 
+$$ \triangledown f(x,y,z) = (0,2y,2). $$
+</p>
+
+
+</div>
+
+	<div style="margin-top:500px;"></div>
+		<footer id="main-footer">
+			<p> Copyright &copy; 2018 Proof By Example </p>
+		</footer>
+	</div>
+</body>
+</html>

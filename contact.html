@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proof By Example</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async>
+	</script>
+</head>
+<body>
+	<header id= "main-header">
+		<div class ="container">
+			<h1> Proof By Example </h1>
+			<ul>
+				<li> <a class="link-style" href="home.html">Home</a></li>
+				<li> <a class="link-style" href="modules.html">Modules</a></li>
+				<li> <a class="link-style" href="about.html">About</a></li>
+				<li> <a class="link-style" href="notes.html">Notes</a></li>
+				<li> <a class="link-style" href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="container">
+		<br>
+		<h2> Contact Us! </h2>
+		<p> Fill out this form, hit submit, it sends us an email, easy as that. We'll get back to you ASAP! </p>
+		<form class="my-form" action="insert_comment.cgi" method="get">
+			<div class="form-group">
+				<label>Name: </label>
+				<input type = "text" name="name">
+			</div>
+			<div class="form-group">
+				<label>Email: </label>
+				<input type="text" name="email">
+			</div>
+			<div class="form-group">
+				<label>Message: </label>
+				<textarea name="message"></textarea>
+			</div>
+			<input class="button" type="submit" value="Submit" name="">
+		</form>
+
+		<form class="my-form" action="view_comment.cgi" method="get">
+			<input class="button" type="submit" value="View Comments" name="">
+		</form>
+
+		<div style="margin-top:300px;"></div>
+		<footer id="main-footer">
+			<p> Copyright &copy; 2018 Proof By Example </p>
+		</footer>
+	</div>
+</body>
+</html>
